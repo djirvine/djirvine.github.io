@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+
+            * {
+                font-family: arial,sans-serif;
+            }
+
+            #search {
+                /*margin: 10px; */
+                font-size: 28px;
+                border-radius: 28px;
+                border: solid #dfe1e5 1px; /* #dfe1e5 */
+                outline: none;
+                padding: 10px;
+                padding-left: 40px;
+                background-image: url('searchicon.png');
+                background-position: 10px 15px;
+                background-repeat: no-repeat;
+                max-width: 300px;
+                margin: auto;
+                               
+            }
+            
+            #search:hover {
+                border: solid white 1px;
+                box-shadow: 0 0 10px #b8b8b8;
+            }
+
+            .button {
+                background-color: #f2f2f2;
+                border: 1px solid #f2f2f2;
+                border-radius: 4px;
+                color: #5F6368;                
+                font-size: 14px;
+                margin: 11px 4px;
+                padding: 0 16px;
+                line-height: 27px;
+                height: 36px;
+                min-width: 54px;
+                text-align: center;
+                cursor: pointer;
+            }
+
+            .button:hover {
+                color: black;
+                border: solid 1px rgb(189, 189, 189);
+                box-shadow: 0px 1px 1px 1px #f2f2f2;
+            }
+
+            .link {
+                text-decoration: none;
+                color: #5F6368;
+                margin: 10px;  
+                
+            }
+
+            .link:hover {
+                text-decoration: underline;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div style="float: right;">
+            <a class="link" href="image_search.html">Google Image Search</a>
+            <a class="link" href="advanced_search.html">Google Advanced Search</a>
+        </div>
+        
+        <!-- <div style="margin:30px; margin-left: 30px; font-size: 28px; color: red;">
+            Google Search
+        </div>
+        
+        <div style="border-bottom: 1px solid grey; margin: 30px 0px">
+        
+        </div> -->
+        
+        <div style="position: relative; top: 150px; text-align: center;"> 
+            
+                <div style="width: 350px; margin: auto;">
+                    <img src="google.png">
+                </div>
+            
+            
+            <form> 
+                                
+                <div style="width: 400px; margin: 20px auto;">
+                    <input id="search" type="text" name="q" placeholder="Search...">
+                </div>
+                
+                <div style="width: 400px; margin: auto;">
+                    <input class="button" style="margin: 10px; " type="submit" value="Google Search" formaction="https://google.com/search">
+                    <input class="button" style="margin: 10px; " type="submit" value="I'm Feeling Lucky!" name = "btnI" formaction="https://google.com/search">
+                </div>
+                
+            </form>
+        </div>
+    </body>
+</html>
