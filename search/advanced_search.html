@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <style>
+            * {
+                font-family: arial,sans-serif;
+            }
+            
+            .search {
+                outline: none; 
+                border-radius: 1px; 
+                border: 1px solid #d9d9d9; 
+                border-top: 1px solid #c0c0c0; 
+                font-size: 13px; 
+                height: 25px; 
+                padding: 1px 8px;
+                width: 400px;
+                margin: 5px;
+            }
+
+            .search:focus {
+                border: 1px solid blue;
+                box-shadow: 0px 1px 1px grey inset;
+            }
+
+            .td-label {
+                width: 200px;
+                font-size: 14px;
+                
+            }
+
+            .link {
+                text-decoration: none;
+                color: #5F6368;
+                margin: 10px;  
+                
+            }
+
+            .link:hover {
+                text-decoration: underline;
+            }
+
+            #submit {
+                float: right; 
+                background-color: #4d90fe; 
+                color: white; 
+                font-size: 12px; 
+                font-weight: bold; 
+                box-shadow: none; 
+                border: 1px solid #3079ed; 
+                padding: 12px; 
+                border-radius: 2px; 
+            }
+
+            #submit:hover {
+                border: 1px solid blue;
+            }
+
+        </style>
+    </head>
+    <body>
+        
+        <div style="text-align: right;">
+            <a class="link" href="index.html">Google Search</a>
+            
+        </div>
+
+        <div style="margin:30px; margin-left: 30px; font-size: 28px; color: red;">
+            Advanced Search
+        </div>
+
+        <div style="border-bottom: 1px solid grey; margin: 30px 0px">
+            
+        </div>
+
+
+        <div style="margin-left: 30px; font-family: Arial, Helvetica, sans-serif;">
+            <form action="https://google.com/search">
+                
+                
+                <table>
+                    <tr> <div style="font-size: 20px;">Find pages with...</div></tr>
+                    <tr>
+                        <td class="td-label">all these words:</td>
+                        <td><input class="search" style="" type="text" name="as_q" placeholder="Search..."></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="td-label">this exact word or phrase:</td>
+                        <td><input class="search" style="" type="text" name="as_epq" placeholder="Search..."></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="td-label">any of these words:</td>
+                        <td><input class="search" style="" type="text" name="as_oq" placeholder="Search..."></td>
+                    </tr>
+                    <tr>
+                        <td class="td-label">none of these words:</td>
+                        <td><input class="search" style="" type="text" name="as_eq" placeholder="Search..."></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input id="submit" style="" type="submit" value="Advanced Search"></td>
+                    </tr>
+                </table>
+                
+            </form>
+        </div>
+    </body>
+</html>
